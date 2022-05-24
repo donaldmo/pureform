@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pureform/static/css/main.073c9b0a.css",
+    "main.js": "/pureform/static/js/main.2315b5df.js",
+    "static/js/787.28cb0dcd.chunk.js": "/pureform/static/js/787.28cb0dcd.chunk.js",
+    "static/media/logo.svg": "/pureform/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/pureform/index.html",
+    "main.073c9b0a.css.map": "/pureform/static/css/main.073c9b0a.css.map",
+    "main.2315b5df.js.map": "/pureform/static/js/main.2315b5df.js.map",
+    "787.28cb0dcd.chunk.js.map": "/pureform/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.2315b5df.js"
+  ]
+}
