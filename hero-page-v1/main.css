@@ -1,0 +1,161 @@
+:root {
+	--heading-text-top: 15%;
+	--margin-top: -80px;
+	--text-color: #303548;
+}
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #24252A;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -99;
+}
+
+.full-page {
+	height: 100vh;
+	position: relative;
+}
+
+.home-hero {
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	overflow: hidden;
+
+	/* background: #FF5A0C;
+	background: -webkit-linear-gradient(top, #FF5A0C, #574A40);
+	background: -moz-linear-gradient(top, #FF5A0C, #574A40);
+	background: linear-gradient(to bottom, #FF5A0C, #574A40); */
+	/* background: url(ressources/background-moutain.png); */
+
+	background-color: transparent;
+
+	margin-top: var(--margin-top);
+	z-index: 1;
+}
+
+.home-hero img {
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+}
+
+.home-hero .heading-text {
+	font-family: Martel Sans;
+	color: var(--text-color);
+	font-weight: 200;
+	font-size: 80px;
+	letter-spacing: -19px;
+
+	position: absolute;
+	left: 50%;
+	top: var(--heading-text-top);
+
+	display: inline-block;
+	transform: translateX(-50%);
+	z-index: -1;
+}
+
+.home-hero h1 span {
+	font-weight: 700;
+	margin-left: -6px;
+}
+
+.heading-title {
+	font-family: Martel Sans;
+	color: var(--text-color);
+	position: absolute;
+	right: 17%;
+	top: calc(var(--heading-text-top) + 10%);
+
+	/* transform: translateX(-50%); */
+	z-index: 1;
+	text-transform: uppercase;
+}
+/* 
+.heading-sub_title,
+.heading-title {
+	padding: 1px;
+	border-radius: 8px;
+	background: radial-gradient(circle, rgba(254, 249, 248, 1) 17%, rgb(48 53 72 / 0%) 100%);
+} */
+
+.home-hero h2 {
+	font-weight: 200;
+}
+
+.heading-title p {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.heading-sub_title {
+	font-family: Martel Sans;
+	color: var(--text-color);
+	position: absolute;
+	top: calc(var(--heading-text-top) + 25%);
+	right: 15%;
+	z-index: 2;
+}
+
+.heading-sub_title p {
+	line-height: 24px;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 950px) {
+	h1 {
+		line-height: 1;
+		text-align: center;
+	}
+}
+
+.home-hero .hero-image {
+	z-index: 2;
+}
+
+/* 
+======================
+*/
+
+.full-page {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+}
+
+.image {
+	position: absolute;
+	top: -42%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-size: contain;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+
+	margin-top: var(--margin-top);
+}
+
+.home-hero .image {
+	top: 65%;
+	background-image: url(shumela-venda-one.png);
+
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
